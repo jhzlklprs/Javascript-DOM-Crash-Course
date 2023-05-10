@@ -250,12 +250,17 @@ const select = document.querySelector('select');
 // select.addEventListener('change', runEvent);
 // select.addEventListener('input', runEvent);
 
-form.addEventListener('submit', runEvent);
+// form.addEventListener('submit', runEvent);
+
 
 function runEvent(e){
-    
     e.preventDefault();
     console.log('EVENT TPYE: ' +e.type);
+
+
+
+    // document.getElementById('output').innerHTML = '<h3>'+itemInput.value+'</h3>';
+
 
     // console.log(e.target.value);
     // document.getElementById('output').innerHTML = '<h3>'+e.target.value+'</h3>';
