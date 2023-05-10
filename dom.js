@@ -151,34 +151,34 @@ var itemList = document.querySelector('#items');
 
 
 
-// createElement
+// // createElement
 
-// Create a div
-var newDiv = document.createElement('div');
+// // Create a div
+// var newDiv = document.createElement('div');
 
-// Add Class
-newDiv.className = 'hello';
+// // Add Class
+// newDiv.className = 'hello';
 
-// Add ID
-newDiv.id = 'hello1';
+// // Add ID
+// newDiv.id = 'hello1';
 
-// Add attr
-newDiv.setAttribute('title', 'Hello World');
-
-
-// Create text node
-var newDivText = document.createTextNode('Hello World');
-
-// Add text to div
-
-newDiv.appendChild(newDivText);
-
-var container = document.querySelector('header .container');
-var h1 = document.querySelector('header h1');
+// // Add attr
+// newDiv.setAttribute('title', 'Hello World');
 
 
-console.log(newDiv);
+// // Create text node
+// var newDivText = document.createTextNode('Hello World');
 
-newDiv.style.fontSize = '30px';
+// // Add text to div
 
-container.insertBefore(newDiv, h1);
+// newDiv.appendChild(newDivText);
+
+// var container = document.querySelector('header .container');
+// var h1 = document.querySelector('header h1');
+
+
+// console.log(newDiv);
+
+// newDiv.style.fontSize = '30px';
+
+// container.insertBefore(newDiv, h1);
