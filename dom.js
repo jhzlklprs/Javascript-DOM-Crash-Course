@@ -125,10 +125,60 @@ var itemList = document.querySelector('#items');
 // childNodes
 // console.log(itemList.childNodes);
 
-console.log(itemList.children);
-console.log(itemList.children[1]);
-itemList.children[1].style.backgroundColor = 'yellow';
+// console.log(itemList.children);
+// console.log(itemList.children[1]);
+// itemList.children[1].style.backgroundColor = 'yellow';
 
-// FirstChild
-console.log(itemList.firstChild); // Stop at 8:40min
+// lastChild
+// console.log(itemList.lastChild); //
 
+// lastElementChild
+// console.log(itemList.lastElementChild); //
+// itemList.lastElementChild.textContent = 'Hello World';
+
+// nextSibling
+// console.log(itemList.nextSibling); //
+// nextElementSibling
+// console.log(itemList.nextElementSibling); //
+
+// previousSilbing
+// console.log(itemList.previousSibling);
+// previousElementSibling
+// console.log(itemList.previousElementSibling);
+// itemList.previousElementSibling.style.color = 'green';
+
+
+
+
+
+// createElement
+
+// Create a div
+var newDiv = document.createElement('div');
+
+// Add Class
+newDiv.className = 'hello';
+
+// Add ID
+newDiv.id = 'hello1';
+
+// Add attr
+newDiv.setAttribute('title', 'Hello World');
+
+
+// Create text node
+var newDivText = document.createTextNode('Hello World');
+
+// Add text to div
+
+newDiv.appendChild(newDivText);
+
+var container = document.querySelector('header .container');
+var h1 = document.querySelector('header h1');
+
+
+console.log(newDiv);
+
+newDiv.style.fontSize = '30px';
+
+container.insertBefore(newDiv, h1);
