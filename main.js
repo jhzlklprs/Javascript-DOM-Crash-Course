@@ -1,5 +1,5 @@
 var form = document.getElementById('addForm');
-var itemList = document.querySelector('items');
+var itemList = document.getElementById('items');
 
 // Form Submit Event
 form.addEventListener('submit', addItem);
@@ -9,11 +9,17 @@ function addItem(e){
     e.preventDefault();
 
     //Get input value
-    let newItem = document.getElementById('item');
+    var newItem = document.getElementById('item').value;
 
     //Create new li element
-    let li = document.createElement('li');
+    const li = document.createElement('li');
+
     //Add Class
     li.className = 'list-group-item';
-    console.log(li);
+
+    //Add text node with input value
+    li.appendChild(document.createTextNode('newItem'));
+
+    itemList.appendChild(li);
+
 }
